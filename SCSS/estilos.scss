@@ -1,0 +1,123 @@
+//paleta de colores
+$color1: rgb(9, 9, 88);
+$color2: rgb(156, 11, 11);
+$color3: white;
+$color4: black;
+
+//fuentes
+@font-face {
+    font-family:'Alinore';
+    src: url(../fonts/alinore/Alinore.otf);
+    }
+@font-face {
+    font-family:'beauty_wind';
+    src: url(../fonts/beauty_wind/Beauty\ Wind.otf);
+}
+
+@font-face {
+    font-family: 'gnarly_bone';
+    src: url(../fonts/gnarly_bone/GnarlyBone_PERSONAL_USE_ONLY.otf);
+}
+
+$font1:'Alinore';
+$font2:'beauty_wind';
+$font3:'gnarly_bone';
+
+//dimensiones
+$size1: 500px;
+$size2: 120px;
+$size3: 60px;
+$size4: 30px;
+$size5: 5px;
+
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-color: $color2;
+
+}
+
+#logo{
+width: 100%;
+transition: all 300ms;
+position: relative;
+}
+
+#logo:hover{
+transform: scale(1.15);
+}
+
+.navbar{
+background-color: $color1;
+text-align: center;
+}
+
+.nav-link{
+padding: 20px;
+margin-top: 20px;
+border: 1px solid $color2;
+border-radius: 20px;
+color: $color2;
+}
+
+.navbar-brand{ 
+font-family: $font1;
+font-size: $size3;
+color: $color2;
+}
+
+.container20-fluid{
+margin-top: $size5;
+background-image: url(../IMG/Chester\ -\ \(10\).jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: $color3;
+font-family: $font1;
+font-size: $size3;
+}
+
+#menu{
+padding: 5%;
+}
+
+.container1{
+height: $size1;
+background-image: url(../IMG/Chester\ -\ \(9\).jpg);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-family: $font1;
+color: $color3;
+}
+
+.col-sm-4 {
+margin-top: $size4;
+}
+
+.col-sm-4 h3:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    text-align: center;
+border-top: 10px solid $color1;
+background-color: $color1;
+}
+
+.fa-brands{
+width: 60px;
+color: $color3;
+}
+
+
+@import "_nosotros";
+@import "_asociate";
+@import "_contacto";
